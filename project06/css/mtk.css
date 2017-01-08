@@ -1,0 +1,367 @@
+/*模态框*/
+
+#mask {
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	float: left;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .7);
+	font-family: "微软雅黑";
+	border: 1px solid #4c4c4c;
+}
+
+#mtk {
+	position: fixed;
+	display: none;
+	top: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 804px;
+	height: 400px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	background: #fff;
+	margin-top: 15%;
+}
+
+#mtk1 {
+	width: 399px;
+	height: 100%;
+	color: #444;
+	font-size: 22px;
+}
+
+#mtk1 span {
+	display: inline-block;
+	width: 70px;
+	margin-left: 15px;
+	padding-top: 90px;
+	float: left;
+}
+
+#mtk1 span:first-child {
+	margin-left: 60px;
+}
+
+#mtk1 p {
+	display: inline-block;
+	width: 100%;
+	margin-left: 60px;
+	padding-top: 6px;
+	padding-bottom: 17px;
+}
+
+#line {
+	width: 1px;
+	height: 200px;
+	background: #bcbcbc;
+	margin-top: 12%;
+}
+
+#mtk2 {
+	width: 400px;
+	height: 100%;
+}
+
+
+#form2 input {
+	width: 310px;
+	height: 42px;
+	text-indent: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #333;
+}
+
+#form2 p {
+	width: 370px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+#form2 p:first-child {
+	margin-top: 76px;
+}
+
+#form2 select {
+	width: 100px;
+	height: 42px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #FFFFFF;
+	color: #333;
+}
+
+#form2 select:first-child {
+	margin-left: 30px;
+}
+
+#mtk_img img {
+	display: block;
+	margin: 0 auto;
+	border: none;
+	/*margin-top: 11px;*/
+}
+
+#submit2{
+	width: 240px !important;
+	height: 46px !important;
+	background: #ea5d64 !important;
+	font-size: 18px !important;
+	color: #fff !important;
+	margin-top: 20px !important;
+	margin-left: 40px !important;
+}
+
+#close_freeorder {
+	color: #bcbcbc;
+	float: right;
+	width: 24px;
+	height: 24px;
+	background: url(../images/closeico.png);
+	margin-top: 20px;
+	margin-right: 20px;
+	font-size: 22px;
+	text-indent: 90%;
+	cursor: pointer;
+}
+
+
+/*class页面*/
+
+.class_row {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+
+.class_row>.col-md-2 ul li {
+	display: inline-block;
+	width: 168px;
+	border: 1px solid #fff;
+	border-radius: 20px;
+}
+
+.left_menu {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+.left_menu li {
+	position: relative;
+	display: block;
+}
+
+.left_menu li a {
+	color: #333;
+	font-size: 18px;
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	text-indent: 50px;
+	letter-spacing: 1px;
+}
+
+
+/*优问课堂左侧导航按钮栏*/
+
+.left_menu li:nth-child(1) a {
+	background: url(../images/class/star.png)no-repeat;
+	background-position: 21px 10px;
+}
+
+.left_menu li:nth-child(1) a:hover,
+.left_menu li:nth-child(1) a:focus {
+	background: url(../images/class/star1.png)no-repeat;
+}
+
+.left_menu li:nth-child(2) a {
+	background: url(../images/class/tip.png)no-repeat;
+	background-position: 21px 10px;
+}
+
+.left_menu li:nth-child(2) a:hover,
+.left_menu li:nth-child(2) a:focus {
+	background: url(../images/class/tip1.png)no-repeat;
+}
+
+.left_menu li:nth-child(3) a {
+	background: url(../images/class/screen.png)no-repeat;
+	background-position: 21px 10px;
+}
+
+.left_menu li:nth-child(3) a:hover,
+.left_menu li:nth-child(3) a:focus {
+	background: url(../images/class/screen1.png)no-repeat;
+}
+
+.left_menu li:nth-child(4) a {
+	background: url(../images/class/doctor.png)no-repeat;
+	background-position: 21px 10px;
+}
+
+.left_menu li:nth-child(4) a:hover,
+.left_menu li:nth-child(4) a:focus {
+	background: url(../images/class/doctor1.png)no-repeat;
+}
+
+.left_menu li a:hover,
+.left_menu li a:focus {
+	color: #fff;
+	text-decoration: none;
+}
+
+.left_menu-pills li {
+	float: left;
+}
+
+.left_menu-pills li a {
+	border-radius: 20px;
+}
+
+.left_menu-pills li+ li {
+	margin-left: 2px;
+}
+
+.left_menu-pills li.active> a,
+.left_menu-pills li.active> a:hover,
+.left_menu-pills li.active> a:focus {
+	color: #fff;
+	background-color: #ff5f68;
+}
+
+.left_menu-stacked li {
+	float: none;
+}
+
+.left_menu-stacked li+ li {
+	margin-top: 2px;
+	margin-left: 0;
+}
+
+.class_midnews {
+	/*border: 1px solid #000;*/
+	width: 570px;
+	height: 700px;
+	margin: 0 auto;
+}
+
+.class_midnews img {
+	width: 170px;
+	height: 120px;
+	float: left;
+}
+
+.class_midnews p {
+	width: 400px;
+	float: left;
+	margin-bottom: 5px;
+	text-indent: 15px;
+	font-size: 20px;
+	color: #333;
+}
+
+.class_midnews span {
+	margin-left: 15px;
+	width: 385px;
+	float: left;
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #666;
+}
+
+.class_midnews time {
+	margin-left: 15px;
+}
+
+.right_news p {
+	display: inline-block;
+	font-size: 22px;
+	text-indent: 10px;
+	width: 100%;
+	height: 34px;
+	border-left: 3px solid #ff5f68;
+}
+
+.class_page {
+	margin-left: 33%;
+}
+
+.right,
+.wrong {
+	font-family: "黑体";
+	font-size: 24px;
+}
+
+.right {
+	color: green;
+}
+
+.wrong {
+	color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+.tab5{
+	width: 100%;height: 60px;
+}
+#form1{
+	float: left;
+	margin: 0;padding: 0;
+	width: 100%;
+	height: 60px;
+	background: #4C4C4C;
+	position: sticky;
+}
+#form1 p{
+	float: left;
+}
+#form1 p:first-child{
+	margin-left: 0px;
+	margin-left: 18%;
+}
+#form1 p>input{
+	width: 210px;
+	height: 32px;
+	border: 1px solid #fff;
+	background: #fff;
+	margin-top: 14px;
+	margin-left: 15px;
+	font-size:16px;
+	/*text-indent: 15px;*/
+}
+.tab5 #form1 select{
+	width: 90px;height: 32px;
+	border:none;
+	float: left;
+	margin-top: 14px;
+	margin-left: 3px;
+}
+#submit{
+	float: left;
+	width: 125px;
+	height: 40px;
+	border: none;
+	border-radius: 5px;
+	background: #FF000E;
+	font-size: 18px;
+	margin-top: 10;
+	margin-left: 30px;
+	text-align: center;
+	text-indent: 0;
+	color: #fff;
+	
+}

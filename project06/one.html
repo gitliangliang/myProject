@@ -1,0 +1,216 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<title>课堂一对一</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mtk.css" />
+
+		<script src="js/jquery-2.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+	</head>
+
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top fl">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand logo"><span style="color: #ff000e;line-height: 90px;">YOUWEN优问</span></a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+						<span class="icon-bar">首页</span>
+						<span class="icon-bar">教学理念</span>
+						<span class="icon-bar">课程体系</span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li>
+							<a href="teachidea.html">教学理念</a>
+						</li>
+						<li>
+							<a href="subject.html">课程体系</a>
+						</li>
+						<li>
+							<a href="teacher.html">师资力量</a>
+						</li>
+						<li>
+							<a href="flowchart.html">学习流程</a>
+						</li>
+						<li>
+							<a href="class.html">优问课堂</a>
+						</li>
+						<li>
+							<a href="one.html">学习一对一</a>
+						</li>
+						<li>
+							<p>电话：400-777-5029</p>
+						</li>
+						<!--<li><a href="">登录</a></li>
+							<li><a href="">注册</a></li>-->
+					</ul>
+
+				</div>
+			</div>
+		</nav>
+
+		<div id="myCarousel" class="carousel slide">
+			<div class="carousel-inner">
+				<div class="item active" style="background:#fff">
+					<img src="images/banner.png" alt="第一张">
+					<a href="javascript:;" id="onebanner_FO" class="index_FO">免费预约</a>
+				</div>
+			</div>
+
+			<div id="rightmenu1"></div>
+			<div id="banner_wechatcode"></div>
+			<div class="rightmenu2"></div>
+			<div class="rightmenu3" onclick="goBack();"></div>
+
+			<div class="one_tab1">
+				<!--引用了师资力量里面相似的css-->
+				<div class="container" style="height: 790px;">
+					<p class="title"><span>在线直播</span>在家也能学习</p>
+
+					<div class="row">
+						<div class="col col-md-5 col-sm-5">
+							<p style="text-align: left;color: #FF000E;">在线教育</p>
+							<span>①随时随地上课  </span>
+							<span>②VIP礼遇，老师注意力100%关注一个孩子</span>
+							<span>③无需花费大量时间和精力在路上接送孩子</span>
+							<span>④丰富多彩的图文结合教学</span>
+							<span>⑤大数据分析孩子学习短板并科学解决或避免</span>
+							<div class="col-md-12 col-sm-12 teach_col" style="margin-left: 0px;">
+								<a href="javascript:;" class="index_FO" style="position: relative;top: 20px;left: -10px;">免费预约</a>
+							</div>
+						</div>
+						<div class="col col-md-4 col-sm-4">
+							<img src="images/one/imgvideo.png" />
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="one_tab2">
+				<div class="container">
+					<h2 class="tab-h2" style="padding-top: 40px;">在线教育<span>四大优势</span></h2>
+					<div class="row">
+						<div class="col col-md-4 col-sm-4">
+							<div class="one_ys">
+								<span>01</span>
+								<span>个性化学习</span>
+								<span>打破传统教育的固定时间、固定课堂对老师的界限</span>
+							</div>
+							<div class="one_ys">
+								<span>02</span>
+								<span>个性化学习</span>
+								<span>打破传统教育的固定时间、固定课堂对老师的界限</span>
+							</div>
+						</div>
+						<div class="col col-md-4 col-sm-4">
+							<img src="images/one/dp.png" style="display: block;margin: 0 auto;width:270px;height: 450px;">
+						</div>
+						<div class="col col-md-4 col-sm-4">
+							<div class="one_ys">
+								<span>03</span>
+								<span>个性化学习</span>
+								<span>打破传统教育的固定时间、固定课堂对老师的界限</span>
+							</div>
+							<div class="one_ys">
+								<span>04</span>
+								<span>个性化学习</span>
+								<span>打破传统教育的固定时间、固定课堂对老师的界限</span>
+							</div>
+						</div>
+
+						<div class="col-md-12 col-sm-12 teach_col" style="margin: 0 auto;">
+							<a href="javascript:;" class="index_FO" 
+							   style="position: relative;left: 480px;">免费预约</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		<div class="tab5 fl">
+			<form action="" method="post" name="botform" onSubmit="return botCheck()" id="form1">				
+				<p><input type="text" id="botname" placeholder="姓名" onblur="botusername()" autocomplete="off" /></p>					
+				<p><input type="text" id="botphone" placeholder="手机号码" onblur="botphone()" autocomplete="off" /></p>
+				<p><input type="text" id="botemail" placeholder="电子邮箱" onblur="botemail()" autocomplete="off" /></p>
+				
+				<select id="stage" name="stage"></select>
+				<select id="grade" name="grade"></select>
+				<select id="subject" name="subject"></select>
+			
+				<input type="submit" id="submit" value="0元免费试听" />
+			</form>
+		</div>
+		<div class="youwencopy fl">
+			Copyright © 上海优问教育科技有限公司
+		</div>
+		
+		<div id="mask"></div>
+		
+		<div id="mtk">
+			<div id="mtk1" class="fl">
+				<span>超小组</span>
+				<span>分层次</span>
+				<span>强互动</span>
+				<p>全流程强化中小学生学习动力</p>
+				<div id="mtk_img">
+					<img src="images/mtk_boy.png" />
+				</div>
+			</div>
+			<div id="line" class="fl"></div>
+			<!--分割线-->
+			<div id="mtk2" class="fl">
+				<div id="close_freeorder"></div>
+				<form action="" id="form2"
+					  method="post" name="form" onSubmit="return formCheck()">
+					<p>
+						<input type="text" id="name" placeholder="姓名" onblur="username()" autocomplete="off"/>
+						<span id="span1"></span>
+					</p>
+					<p>
+						<input type="text" id="phone" placeholder="手机号" onblur="myphone()" autocomplete="off"/>
+						<span id="span2"></span>
+					</p>
+					<p>
+						<input type="text" id="email" placeholder="邮箱" onblur="myemail()" autocomplete="off"/>
+						<span id="span3"></span>
+					</p>
+					
+					<select id="mtkstage" name="mtkstage" style="margin-left: 30px;"></select>
+					<select id="mtkgrade" name="mtkgrade"></select>
+					<select id="mtksubject" name="mtksubject"></select>
+					
+					<p><input type="submit" id="submit2" value="预约免费体验" /></p>
+				</form>
+			</div>
+		</div>
+	</body>
+	
+	<script type="text/javascript" src="js/public.js"></script>
+	
+	<script type="text/javascript" src="js/sjld.js"></script>
+	<script type="text/javascript" src="js/mtksjld.js"></script>
+	<script type="text/javascript">
+			_init_area();
+			_init_mtk();
+			
+	</script>
+	<script type="text/javascript">
+			
+	</script>
+	
+</html>

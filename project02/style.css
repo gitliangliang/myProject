@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border:0;
+}
+ol, ul ,li{list-style: none;} 
+a{
+    text-decoration: none;
+}
+#BOX{
+    font-size: 0;
+    position: relative;
+}
+/*右下角固定连接——start*/
+#fixed{
+    width:30px;
+    height: 410px;
+    position: fixed;
+    font-size: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 11;
+}
+/*右下角固定连接——end*/
+/*上部导航——start*/
+#top{
+    width: 100%;
+    height: 135px;
+    background: black;
+    background-image: url(img/icon.png);
+    background-repeat: no-repeat ;
+    background-position: 180px 50%; 
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 10;
+}
+#top ul{
+    margin-left: 420px;
+}
+#top ul li {
+    width:120px;
+    height: 100%;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+    line-height: 135px;
+}
+#top ul li a{
+    color: #fff;
+}
+#menu .active a { color: red;}
+/*上部导航——end*/
+/*公共样式——start*/
+.section{ 
+    text-align: center;
+    font: 0px "Microsoft Yahei";
+    /*background:red;*/
+    position: relative;
+}
+.slide{
+    font-size: 0;
+    position: relative;
+}
+.banner-btn{
+    position: absolute;
+    height: 110px;
+    bottom:80px;
+    background-repeat: no-repeat;
+    background-position: 11px 11px ;
+}
+.banner-btn li{
+/*    width:97px;
+    height: 110px;*/
+    float: left;
+    margin-right: 50px ;
+}
+.banner-btn li a{
+    display: block;
+    width:97px;
+    height: 97px;
+    border-radius: 50%;
+}
+.a-hover{
+    background: url(img/zz.png);
+}
+/*公共样式——end*/
+
+/*点击进入back三者公共样式——start*/
+.back{
+    position: relative;
+}
+.btn-fan{
+    position: absolute;
+    right: 50px;
+    top: 180px;
+    z-index: 9;
+}
+.slide-img{
+    /*相对于slide定位*/
+    position: absolute;
+    right: 50px;
+    top: 180px;
+    z-index: 9;
+}
+/*点击进入back三者公共样式——end*/
+/*城市与别墅——start*/
+.banner-btn-bg1{
+    left:410px;
+    background-image: url(img/n.png); 
+}
+/*城市与别墅——end*/
+
+
+/*别墅与中国——start*/
+.section .btn-jin-1{
+    position: absolute;
+    bottom: 180px;
+    left:280px;
+}
+.cont-1{
+    width:490px;
+    height: 300px;
+    position: absolute;
+    bottom: 40px;
+    right:250px;
+}
+.cont-1 a{
+    display: block;
+    float: left;
+    width:117px;
+    height: 33px;
+    font-size: 16px;
+    line-height: 33px;
+    color:#fff;
+    background: #828282;
+    margin-right: 10px;
+}
+.cont-1 img{
+    margin-top: 30px;
+}
+.color{
+    background: #B71018;
+}
+.dis-none{
+    display: none;
+}
+/*别墅与中国——end*/
+
+/*别墅与园林——start*/
+.section .btn-jin-2{
+    position: absolute;
+    bottom: 200px;
+    right:400px;
+}
+.cont-2{
+    width:950px;
+    height: 415px;
+    position: absolute;
+    top: 140px;
+    left:210px;
+}
+.cont-2 ul li {
+    float: left;
+    width:111px;
+    height: 407px;
+    margin-left: 7px;
+}
+/*别墅与园林——end*/
+
+/*别墅大社区——start*/
+.banner-btn-bg2{
+    left:500px;
+    background-image: url(img/n1.png);
+}
+/*别墅大社区——end*/
+
+/*梵街精品——start*/
+.banner-btn-bg3{
+    left:490px;
+    background-image: url(img/n2.png);
+}
+/*-- 一墅九庭院——start --*/
+.bg_08-1{
+    background: url(img/bg_08-1.jpg);
+    background-size: 1360px 662px;
+}
+.house-1{
+    width:584px;
+    height: 525px;
+    position: absolute;
+    left: 300px;
+    bottom: 0;
+}
+.house-ul{
+    position: absolute;
+    right: 200px;
+    bottom: 120px;
+}
+.house-ul div{
+    width:280px;
+    height: 90px;
+    cursor: pointer;
+    line-height: 60px;
+    margin-top: -30px;
+}
+.house-ul div span{
+    font-size: 20px;
+    float: right;
+}
+.house-ul .z-i-5{
+    position: relative;
+    z-index: 50;
+}
+.house-ul .z-i-4{
+    position: relative;
+    z-index: 40;
+}
+.house-ul .z-i-3{
+    position: relative;
+    z-index: 30;
+}
+.house-ul .z-i-2{
+    position: relative;
+    z-index: 20;
+}
+.house-ul .z-i-1{
+    position: relative;
+    z-index: 10;
+}
+/*-- 一墅九庭院——end --*/
+/*-- 户型鉴赏——start --*/
+.bg_08-2{
+    background: url(img/bg_08-2.jpg);
+    background-size: 1360px 662px;
+}
+.house-2{
+    width:1140px;
+    height: 380px;
+    position: absolute;/*相对于slide定位*/
+    top: 140px;
+    left:100px;
+}
+.house-2 p{
+    font-size: 16px;
+}
+.a-btn{
+    display: inline-block;
+    width:135px;
+    height: 40px;
+    background: #B71018;
+    color:#fff;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 5px;
+}
+.w-370{
+    width:366px;
+    height: 228px;
+    border:2px solid #D1D1D1;
+    float: left;
+    margin:100px 5px;
+}
+/*-- 户型鉴赏——end --*/
+/*-- 样板间——start --*/
+.bg_08-3{
+    background: url(img/bg_08-3.jpg);
+    background-size: 1360px 662px;
+}
+.house-3{
+    width:1000px;
+    height: 460px;
+    position: absolute;/*相对于slide定位*/
+    top: 140px;
+    left:200px;
+}
+.wid-817{
+    width:817px;
+    height: 387px;
+    margin: 0 auto;
+}
+.ul-100{
+    width:1000px;
+    height: 50px;
+    margin-top:12px;}
+.ul-100 ul{
+   margin-left: 60px;
+}
+.ul-100 ul a span{
+    font-size: 40px;
+    line-height: 50px;
+    float: left;
+    color:#ccc;
+}
+.ul-100 ul li {
+    width:100px;
+    height: 50px;
+    float: left;
+    margin-left: 2px;
+}
+.ul-100 ul li img{
+    width:100px;
+    height: 50px;
+}
+/*-- 样板间——end --*/
+/*梵街精品——end*/
+
+
+
+
+
+
+
+.footer{
+    background: #E6E6E6;
+}
+
+

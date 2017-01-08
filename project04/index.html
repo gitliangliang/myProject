@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/weather.min.css" />
+		<link rel="stylesheet" href="css/jquery.fullPage.css">
+		<link rel="stylesheet" href="css/animate.min.css" />
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/jquery.1.11.3.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="jq/tinymce-4.1.7/tinymce.min.js"></script>
+		<script src="js/jquery.fullPage.min.js"></script>
+		<script src="js/main.js"></script>
+		<title>古典中国风</title>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<nav class="navbar navbar-default">
+				<div class="container">
+					<div class="navbar-header">
+						<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<span></span>
+						</a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul id="menu" class="nav navbar-nav hidden-sm hidden-md">
+							<li data-menuanchor="page1" class="active"><a href="#page1">山水画</a>
+							</li>
+							<li data-menuanchor="page2"><a href="#page2">水墨展</a>
+							</li>
+							<li data-menuanchor="page3"><a href="#page3">诗歌合</a>
+							</li>
+							<li data-menuanchor="page4"><a href="#page4">笔墨言</a>
+							</li>
+
+						</ul>
+
+						<form class="navbar-form navbar-right hidden-sm hidden-md">
+							<!--使用button的时候会导致第一次弹窗失效-->
+							<a id="login" href="javascript:;" class="btn btn-primary  animated bounceIn" data-toggle="modal" data-backdrop="static" data-target="#myModal">登录</a>
+
+							<a id="regis" href="javascript:;" class="btn btn-success" data-toggle="modal" data-backdrop="static" data-target="#myModal2">注册</a>
+						</form>
+					</div>
+				</div>
+			</nav>
+			<div id="dowebok">
+				<div class="section first">
+					<div class="slide">
+						<div class="row">
+							<div class="col-sm-12 weather snow text-center first-list1">
+								<img class="first-img animated rotateInDownRight" src="img/4.jpg" />
+							</div>
+						</div>
+					</div>
+
+					<div class="slide">
+						<div class="row">
+							<div class="col-sm-12 weather rain text-center first-list1">
+								<img class="first-img animated rotateInDownRight" src="img/4.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section second">
+					<div class="row">
+						<div class="col-sm-12 animated bounceIn">
+							<div class="pic ">
+								<img src="img/7.jpg" />
+								<img src="img/8.jpg" />
+								<img src="img/9.jpg" />
+								<img src="img/10.jpg" />
+								<img src="img/11.jpg" />
+								<img src="img/12.jpg" />
+								<img src="img/13.jpg" />
+								<img src="img/14.jpg" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section third">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="gallery clearfix">
+								<div class="item">
+									<img align="left" src="img/22.jpg" />
+									<span class="caption">
+      <h1>
+        	凤栖梧
+      </h1>
+      <p>
+        衣带渐宽终不悔，为伊消得人憔悴。
+      </p>
+    </span>
+								</div>
+								<div class="item">
+									<img align="left" src="img/16.jpg" />
+									<span class="caption">
+      <h1>
+        	诗经邶风击鼓
+      </h1>
+      <p>
+        死生契阔，与子成悦.执子之手，与子偕老。
+      </p>
+    </span>
+								</div>
+								<div class="item">
+									<img align="left" src="img/23.jpg" />
+									<span class="caption">
+      <h1>
+       冬夜读书示子聿
+      </h1>
+      <p>
+        纸上得来终觉浅，绝知此事要躬行。
+      </p>
+    </span>
+								</div>
+								<div class="item">
+									<img align="left" src="img/18.jpg" />
+									<span class="caption">
+      <h1>
+        山行
+      </h1>
+      <p>
+        停车坐爱枫林晚，霜叶红于二月花。
+      </p>
+    </span>
+								</div>
+								<div href="#" class="item">
+									<img align="left" src="img/19.jpg" />
+									<span class="caption">
+      <h1>
+       	已亥杂诗
+      </h1>
+      <p>
+        落红不是无情物，化作春泥更护花。
+      </p>
+    </span>
+								</div>
+								<div class="item">
+									<img align="left" src="img/20.jpg" />
+									<div class="caption">
+										<h1>
+        南园
+      </h1>
+										<p>
+											男儿何不带吴钩，收取关山五十州。
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section four">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2">
+							<form action="" class=" four-form form-horizontal">
+								<div class="form-group">
+									<label for="user" class="col-sm-2 control-label">用户名：</label>
+									<div class="col-sm-10">
+										<input type="text" id="user" name="user" placeholder="请输入用户名" class="form-control" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="email" class="col-sm-2 control-label">邮箱：</label>
+									<div class="col-sm-10">
+										<input type="email" id="email" name="email" placeholder="请输入邮箱" class="form-control" />
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="col-sm-2 control-label">性别：</label>
+									<div class="col-sm-10">
+										<div class="radio">
+											<label for="">
+												<input type="radio" checked="checked" name="sex" /> 男
+											</label>
+											<label for="">
+												<input type="radio" name="sex" /> 女
+											</label>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label for="message" class="col-sm-2 control-label">留言：</label>
+									<div class="col-sm-10">
+										<textarea class="form-control" id="richText" rows="8">
+											请填写留言内容！
+										</textarea>
+									</div>
+								</div>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title" id="myModalLabel">用户登录</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal" id="loginForm">
+							<div class="form-group has-feedback">
+								<label for="user" class="col-sm-3 control-label">用户名：</label>
+								<div class="col-sm-6">
+									<input type="text" id="user" name="user" placeholder="请输入用户名" class="form-control" />
+								</div>
+								<div class="col-sm-3">
+									<div class="Validform_user"></div>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback">
+								<label for="pass" class="col-sm-3 control-label">密码：</label>
+								<div class="col-sm-6">
+									<input type="password" id="pass" name="pass" placeholder="请输入密码" class="form-control" />
+								</div>
+								<div class="col-sm-3">
+									<div class="Validform_pass"></div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">提交</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>2
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+						</button>
+						<h4 class="modal-title" id="myModalbeLal">用户注册</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal" id="registerform">
+							<div class="form-group has-feedback">
+								<label for="user" class="col-sm-3 control-label">用户名：</label>
+								<div class="col-sm-6">
+									<input type="text" id="user" name="user" placeholder="请输入用户名" class="form-control" />
+								</div>
+								<div class="col-sm-3">
+									<div class="Validform_user"></div>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback">
+								<label for="pass" class="col-sm-3 control-label">密码：</label>
+								<div class="col-sm-6">
+									<input type="password" id="pass" name="pass" placeholder="请输入密码" class="form-control" />
+								</div>
+								<div class="col-sm-3">
+									<div class="Validform_pass"></div>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback">
+								<label for="pass2" class="col-sm-3 control-label">确认密码：</label>
+								<div class="col-sm-6">
+									<input type="password" id="pass2" name="pass2" placeholder="请确认密码" class="form-control" />
+								</div>
+								<div class="col-sm-3">
+									<div class="Validform_pass2"></div>
+								</div>
+							</div>
+
+							<div class="form-group has-feedback">
+								<label for="email" class="col-sm-3 control-label">邮箱：</label>
+								<div class="col-sm-6">
+									<input type="password" id="email" name="email" placeholder="请输入邮箱" class="form-control" />
+								</div>
+								<div class="col-sm-3">
+									<div class="Validform_email"></div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">提交</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
