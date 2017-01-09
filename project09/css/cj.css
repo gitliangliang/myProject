@@ -1,0 +1,278 @@
+/*通用样式*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a img{
+	border: none;
+}
+/*头部LOGO*/
+.top{
+	width: 100%;
+	height: 100px;
+	background-color: #ffffff;
+	/*border: solid;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.top .topcon{
+	width: 1000px;
+	height: 100px;
+	margin: 0 auto 0;
+	padding: 10px;
+}
+.topcon img{
+	float: left;
+	margin-bottom: 20px;
+}
+.topcon a{
+	width: 150px;
+	height: 48px;
+	display: block;
+	float: right;
+	border: solid 1px;
+	color: #2b4464;
+	border-radius: 5px;
+	font-size: 24px;
+	line-height: 46px;
+	text-align: center;
+	margin-top: 10px;
+	font-family: "microsoft yahei";
+	
+}
+.topcon a:hover{
+	color: #ffffff;
+	background-color: #2b4464;
+}
+/*大图背景下载地*/
+.dt{
+	width: 100%;
+	height: 570px;
+	/*border: solid;*/
+	background-image: url(../images/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-top: 100px;
+}
+.xz{
+	width: 700px;
+	height: 600px;
+	margin: 0 auto 0;
+	padding: 50px ;
+	font-size: 13px;
+	color: white;
+}
+.xz .xz1{
+	width: 250px;
+	float: right;
+}
+.xz .xz2{
+	width: 200px;
+
+}
+.xz p{
+	text-indent: 1em;
+	padding: 5px;
+
+}
+.xz a{
+	width: 210px;
+	height: 46px;
+	display: block;
+	/*float: right;*/
+	border: solid 1px;
+	color: #ffffff;
+	border-radius: 5px;
+	font-size: 20px;
+	line-height: 46px;
+	text-align: center;
+	margin-top: 10px;
+	font-family: "microsoft yahei";
+}
+.xz a:hover{
+	background-color: white;
+	color: #2b4464;
+}
+/*帮助栏*/
+.bz{
+	width: 100%;
+	height: 360px;
+	/*border: solid;*/
+	text-align: center;
+}
+.bz h1{
+	margin: 50px 0;
+	color: #2b4464;
+	font-weight: bolder;
+	font-size: 35px;
+	text-align: center;
+}
+.bz1{
+	float: left;
+	margin-left: 300px;
+	width: 270px;
+	/*height: 250px;*/
+	/*border:solid;*/
+
+}
+.bz1 h2{
+	margin-bottom: 10px;
+	font-size: 30px;
+	color: #585858;
+}
+.bz p{
+	line-height: 28px;
+
+}
+.bz2{
+	float: right;
+	margin-right: 300px;
+	width:370px;
+	border-left: solid 0.5px #585858;
+	padding-left: 100px;
+}
+.bz2 h2{
+	margin-bottom: 10px;
+	font-size: 30px;
+	color: #585858;
+}
+.clear{
+	clear: both;
+}
+/*定位图片*/
+.ts{
+	width: 100%;
+	height:590px;
+	background-image: url(../images/img_bg1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	/*margin-top: 60px;*/
+}
+/*随身校园栏*/
+.ss{
+	width: 100%;
+	height: 590px;
+	/*border: solid;*/
+	position: relative;
+}
+.ss img{
+	width: 300px;
+	position: absolute;
+	left: 100px;
+	top: -80px;
+}
+.ss div{
+	position: absolute;
+	right: 150px;
+	bottom: 100px;
+	width: 300px;
+}
+.ss div h1{
+	font-size: 60px;
+	color:#343434;
+	line-height: 80px;
+}
+.ss div p{
+	line-height: 2em;
+	color: #9e9e9e;
+}
+/*脚丫定位图*/
+.jy{
+	width: 100%;
+	height:590px;
+	background-image: url(../images/img_bg2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	/*margin-top: 60px;*/
+}
+/*校园资讯栏*/
+.zx{
+	width: 100%;
+	height: 590px;
+	/*border: solid;*/
+	position: relative;
+}
+.zx img{
+	width: 300px;
+	position: absolute;
+	right: 100px;
+	top: -80px;
+}
+.zx div{
+	position: absolute;
+	left: 150px;
+	bottom: 100px;
+	width: 300px;
+}
+.zx div h1{
+	font-size: 60px;
+	color:#343434;
+	line-height: 80px;
+}
+.zx div p{
+	line-height: 2em;
+	color: #9e9e9e;
+}
+/*屁股定位图*/
+.pg{
+	width: 100%;
+	height:590px;
+	background-image: url(../images/img_bg3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	/*margin-top: 60px;*/
+}
+/*玩转校园栏*/
+.wz{
+	width: 100%;
+	height: 590px;
+	/*border: solid;*/
+	position: relative;
+}
+.wz img{
+	width: 300px;
+	position: absolute;
+	left: 100px;
+	top: -80px;
+}
+.wz div{
+	position: absolute;
+	right: 150px;
+	bottom: 100px;
+	width: 300px;
+}
+.wz div h1{
+	font-size: 60px;
+	color:#343434;
+	line-height: 80px;
+}
+.wz div p{
+	line-height: 2em;
+	color: #9e9e9e;
+}
+/*底部图*/
+.db{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	color:#ADAD9c;
+	background-color: #3a3939;
+	font-size: 15px;
+	padding: 30px;
+}
+.db p{
+	line-height: 30px;
+}
