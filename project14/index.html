@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>微场景</title>
+		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/zepto.fullpage.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+
+	<body>
+		<div class="wp">
+			<div class="wp-inner">
+				<div class="page page1">
+					<div id="lanren">
+						<div id="audio-btn" class="on" onclick="lanren.changeClass(this,'media')">
+							<audio loop="loop" src="music/SeeYouAgain.mp3" id="media" preload="preload"></audio>
+						</div>
+					</div>
+					<h1 class="animated bounceIn">Hello World</h1>
+					<h2 class="page1-first animated bounceInLeft">仰望星空</h2>
+					<h2 class="animated bounceInRight">月下独行</h2>
+				</div>
+				<div class="page page2">
+					<div class="page2-img"></div>
+					<div class="page2-info">
+						<p>世界还小</p>
+						<p>我陪你去天涯海角</p>
+					</div>
+				</div>
+				<div class="page page3">
+					<h3 class="wow fadeInDown text-center">立方体轮播效果</h3>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(img/nature1.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature4.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature5.jpg)"></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="page page4">
+					<!-- Swiper -->
+					<h3 class="text-center">2D覆盖流效果</h3>
+					<div class="swiper-container2">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(img/nature5.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature4.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature5.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature1.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature4.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature5.jpg)"></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="page page5">
+					<h3>3D 反转效果</h3>
+					<div class="swiper-container3">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(img/nature2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature4.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature5.jpg)"></div>
+						</div>
+
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+
+						<!-- Add Arrows -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+
+				<div class="page page6">
+					<h3 class="text-center">自动轮播</h3>
+					<!-- Swiper -->
+					<div class="swiper-container4">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image:url(img/nature5.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature2.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature3.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature4.jpg)"></div>
+							<div class="swiper-slide" style="background-image:url(img/nature1.jpg)"></div>
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination"></div>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+
+				<div class="page page7">
+					<h3>图片懒加载</h3>
+					<!-- Swiper -->
+					<div class="swiper-container5">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<!-- Required swiper-lazy class and image source specified in data-src attribute -->
+								<img data-src="img/nature2.jpg" class="swiper-lazy">
+								<!-- Preloader image -->
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+							</div>
+							<div class="swiper-slide">
+								<img data-src="img/nature3.jpg" class="swiper-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+							</div>
+							<div class="swiper-slide">
+								<img data-src="img/nature4.jpg" class="swiper-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+							</div>
+							<div class="swiper-slide">
+								<img data-src="img/nature5.jpg" class="swiper-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+							</div>
+							<div class="swiper-slide">
+								<img data-src="img/nature2.jpg" class="swiper-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+							</div>
+							<div class="swiper-slide">
+								<img data-src="img/nature4.jpg" class="swiper-lazy">
+								<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+							</div>
+
+						</div>
+						<!-- Add Pagination -->
+						<div class="swiper-pagination swiper-pagination-white"></div>
+						<!-- Navigation -->
+						<div class="swiper-button-next swiper-button-white"></div>
+						<div class="swiper-button-prev swiper-button-white"></div>
+					</div>
+				</div>
+			</div>
+			<span class="start"><b></b></span>
+			<script src="js/zepto.min.js"></script>
+			<script src="js/swiper.min.js"></script>
+			<script src="js/zepto.fullpage.js"></script>
+			<script src="js/main.js"></script>
+	</body>
+
+</html>
