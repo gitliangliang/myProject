@@ -1,0 +1,63 @@
+<div class="box container">
+	<h2 class="text-center">用户详情</h2>
+	<h3 class="text-right"></h3>
+	<form class="form-horizontal" id="registerform" role="form">
+		<div class="form-group has-feedback">
+			<label class="col-sm-2 control-label">用户名：</label>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" name="username" placeholder="请输入用户名" id="user" required readonly="readonly">
+			</div>
+		</div>
+
+		<div class="form-group has-feedback">
+			<label class="col-sm-2 control-label">昵称：</label>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" name="nickname" id="nickname" placeholder="请输入昵称" required readonly="readonly">
+			</div>
+		</div>
+		<div class="form-group has-feedback">
+			<label class="col-sm-2 control-label">密码：</label>
+			<div class="col-sm-7">
+				<input type="password" name="password" class="form-control" placeholder="请输入密码" required id="pass" readonly="readonly">
+			</div>
+		</div>
+
+		<div class="form-group has-feedback">
+			<label class="col-sm-2 control-label">年龄：</label>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" name="age" placeholder="请输入年龄" required id="age" readonly="readonly">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-sm-2 control-label">性别：</label>
+			<div class="col-sm-10">
+				<div class="radio">
+					<label>
+                            <input type="radio" name="sex"  value="femail">
+                            女
+                        </label>
+					<label>
+                            <input type="radio" name="sex" value="male">
+                            男
+                        </label>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group has-feedback">
+			<label class="col-sm-2 control-label">电话：</label>
+			<div class="col-sm-7">
+				<input type="text" class="form-control" name="telphone" placeholder="请输入电话" required id="phone" readonly="readonly">
+			</div>
+		</div>
+
+		<div class="form-group has-feedback">
+			<label class="col-sm-2 control-label">邮件：</label>
+			<div class="col-sm-7">
+				<input type="email" class="form-control" name="email" placeholder="请输入邮件" required id="email" readonly="readonly">
+			</div>
+		</div>
+	</form>
+	<a href="javascript:;" class="btn btn-info center-block  info">返回用户详情页</a>
+</div>

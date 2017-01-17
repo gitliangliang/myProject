@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
+		<script src="js/jquery.1.11.3.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+
+	<body ng-controller="myCtrl">
+		<nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="#/">注册</a>
+				</li>
+				<li>
+					<a href="#/login">登录</a>
+				</li>
+				<li>
+					<a href="#/list">列表</a>
+				</li>
+				<li>
+					<a href="#/update">修改</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div ng-view=""></div>
+	</body>
+
+</html>
