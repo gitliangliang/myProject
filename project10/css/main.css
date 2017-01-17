@@ -1,0 +1,640 @@
+body {
+  background: #fff;
+  font-family: "微软雅黑";
+  overflow-x: hidden;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wrap {
+  position: relative;
+}
+.header_top {
+  background: #e8e8e8;
+}
+.header_bg img {
+  border: none;
+  vertical-align: top;
+  width: 100%;
+}
+.header_nav {
+  height: 50px;
+  width: 100%;
+  background: #4f95c6;
+  position: absolute;
+  top: 180px;
+  left: 0;
+}
+.header_nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+.header_nav ul li {
+  line-height: 50px;
+}
+.header_nav ul li a {
+  display: inline-block;
+  color: #feffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.list1 {
+  margin-top: -150px;
+}
+.list1 .panel.panel-default {
+  margin-bottom: 10px;
+}
+.list1 .panel-heading {
+  background: #66a1c1;
+  height: 46px;
+  line-height: 46px;
+  padding: 0;
+}
+.list1 .panel-heading h3 {
+  line-height: 46px;
+}
+.list1 .news_title {
+  color: #fffeff;
+  line-height: 46px;
+  padding-left: 30px;
+}
+.list1 .news_title span {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  width: 35px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") -197px 10px no-repeat;
+}
+.list1 .panel-body {
+  background: #f1f1f1;
+}
+.list1 .panel-body .carousel {
+  width: 300px;
+}
+.list1 .panel-body img {
+  width: 300px;
+  height: 230px;
+}
+.list1 .panel-body .carousel-indicators {
+  bottom: 0;
+}
+.list1 .tab-content-news {
+  list-style: none;
+  margin-top: 24px;
+}
+.list1 .tab-content-news li {
+  line-height: 27px;
+}
+.list1 .tab-content-news li:first-child a {
+  color: #669ecd;
+}
+.list1 .tab-content-news li a {
+  text-decoration: none;
+  color: #202020;
+}
+.list1 .news-right {
+  padding-left: 0;
+}
+.list1 .news-right .panel-heading {
+  background: #8e995f;
+}
+.list1 .news-right .news_title {
+  color: #fffeff;
+  line-height: 46px;
+  padding-left: 30px;
+}
+.list1 .news-right .news_title span {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  width: 35px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") -367px 2px no-repeat;
+}
+.list1 .news-right .btn.btn-default {
+  width: 130px;
+  height: 40px;
+  background: #73e2cf;
+  line-height: 25px;
+  color: #feffff;
+  outline: none;
+}
+.list1 .news-right ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  padding-bottom: 9px;
+}
+.list1 .news-right ul li img {
+  border: none;
+  vertical-align: top;
+  width: 60px;
+  height: 60px;
+}
+.list2 .panel.panel-default {
+  margin-bottom: 10px;
+}
+.list2 .panel-heading {
+  background: #4da9f2;
+  height: 46px;
+  line-height: 46px;
+  padding: 0;
+  position: relative;
+}
+.list2 .panel-heading .active {
+  box-sizing: border-box;
+  border-bottom: 3px solid #fff;
+}
+.list2 .panel-heading .list2-ul {
+  display: flex;
+  justify-content: space-around;
+  height: 46px;
+  line-height: 46px;
+}
+.list2 .panel-heading .list2-ul li a {
+  color: #fffffd;
+  text-decoration: none;
+  line-height: 46px;
+  display: inline-block;
+}
+.list2 .panel-heading .list2-ul li span {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  width: 35px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") -367px 2px no-repeat;
+}
+.list2 .panel-heading .list2-ul li:nth-child(1) span {
+  background-position: -300px 8px;
+  margin-right: 3px;
+}
+.list2 .panel-heading .list2-ul li:nth-child(2) span {
+  background-position: -270px 5px;
+  margin-right: 3px;
+}
+.list2 .panel-heading .list2-ul li:nth-child(3) span {
+  background-position: -45px 3px;
+  margin-right: 3px;
+}
+.list2 .panel-heading .list2-ul li:nth-child(4) span {
+  background-position: -160px 6px;
+  margin-right: 3px;
+}
+.list2 .panel-heading .list2-ul li:nth-child(5) span {
+  background-position: -5px 6px;
+  margin-right: 3px;
+}
+.list2 .panel-heading .list2-ul strong {
+  display: inline-block;
+  width: 2px;
+  height: 46px;
+  background: #fff;
+  margin-left: 10px;
+}
+.list2 .panel-body {
+  position: relative;
+  background: #f1f1f1;
+  padding-bottom: 30px;
+  height: 300px;
+}
+.list2 .panel-body .content {
+  width: 100%;
+  position: absolute;
+  display: none;
+  padding-right: 50px;
+}
+.list2 .panel-body .content ul li {
+  line-height: 40px;
+  width: 100%;
+}
+.list2 .panel-body .content ul li strong {
+  font-weight: normal;
+}
+.list2 .panel-body .content ul li:first-child a {
+  color: #659fcd;
+}
+.list2 .panel-body .content ul li:first-child strong {
+  color: #659fcd;
+}
+.list2 .panel-body .content ul li a {
+  color: #333;
+}
+.list2 .panel-body .content span {
+  color: #f2bd4d;
+}
+.list2 .panel-body .active {
+  display: block;
+}
+.list2 .news-right {
+  padding-left: 0;
+}
+.list2 .news-right .panel-heading {
+  background: #8e995f;
+  padding: 0;
+}
+.list2 .news-right .news_title {
+  color: #fffeff;
+  line-height: 46px;
+  padding-left: 30px;
+}
+.list2 .news-right .news_title span {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  width: 35px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") -403px 2px no-repeat;
+}
+.list2 .news-right .panel-body {
+  height: auto;
+}
+.list2 .news-right ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  padding-bottom: 9px;
+}
+.list2 .news-right ul li img {
+  border: none;
+  vertical-align: top;
+  width: 60px;
+  height: 60px;
+}
+.list2 .news-right .regis1 a,
+.list2 .news-right .regis2 a {
+  width: 230px;
+  height: 40px;
+  border-radius: 20px;
+  background: #7fbffc;
+  color: #fcffff;
+  font-weight: bold;
+  line-height: 25px;
+  position: relative;
+}
+.list2 .news-right .regis1 {
+  margin-top: 20px;
+}
+.list2 .news-right .regis1 a span {
+  position: absolute;
+  top: 3px;
+  left: 40px;
+  width: 35px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") -470px 2px no-repeat;
+}
+.list2 .news-right .regis2 {
+  margin-top: 30px;
+}
+.list2 .news-right .regis2 a {
+  background: #ff8685;
+}
+.list2 .news-right .regis2 a span {
+  position: absolute;
+  top: 3px;
+  left: 40px;
+  width: 35px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") -440px 2px no-repeat;
+}
+.list2 .subLeft {
+  padding-left: 0;
+}
+.list2 .news2-right .news_title span {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  width: 35px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") -331px 4px no-repeat;
+}
+.list2 .news2-right .regis1 a {
+  border-radius: 3px;
+  background: #5896c7;
+}
+.list2 .news2-right .regis1 a span {
+  background-position: -195px -70px;
+}
+.list2 .news2-right .regis2 a {
+  border-radius: 3px;
+  background: #4e7594;
+}
+.list2 .news2-right .regis2 a span {
+  background-position: -195px -70px;
+}
+.list2 .news3-right ul {
+  margin-top: 15px;
+}
+.list2 .news3-right ul li a {
+  color: #434343;
+}
+.list2 .vertical-tab ul {
+  margin-bottom: 0;
+}
+.list2 .vertical-tab ul li {
+  background: #efefef;
+  margin-bottom: 12px;
+  line-height: 54px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 18px;
+}
+.list2 .vertical-tab ul li:hover {
+  background: #4da9f2;
+  color: #fff;
+}
+.list2 .vertical-tab ul li:last-child {
+  margin-bottom: 0;
+}
+.list2 .vertical-tab li.active {
+  background: #4da9f2;
+}
+.list2 .third {
+  margin-top: 13px;
+}
+.list2 .third .col-sm-8 {
+  position: relative;
+  height: 430px;
+}
+.list2 .third .col-sm-8 .active {
+  display: block;
+}
+.list2 .third .chart {
+  width: 506px;
+  height: 430px;
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+}
+.list2 .four {
+  margin-top: 15px;
+}
+.list2 .four .panel-heading .panel-title {
+  height: 46px !important;
+  line-height: 46px;
+  color: #fff;
+  padding-left: 30px;
+}
+.list2 .four .panel-heading .panel-title span {
+  font-size: 12px;
+  float: right;
+  margin-right: 30px;
+  border: 1px solid #fff;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 8px;
+  width: 100px;
+  text-align: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.list2 .four .panel-body {
+  height: auto;
+}
+.list2 .four .panel-body .qs {
+  display: flex;
+  justify-content: space-around;
+  line-height: 50px;
+}
+.list2 .four .panel-body .qs li {
+  color: #000000;
+}
+.list2 .four .panel-body .qs li:first-child {
+  color: #3abbf4;
+}
+.list2 .four .panel-body .qs li:last-child {
+  color: #ff9c03;
+}
+.list2 .four .panel-body .qs li:hover {
+  color: #3abbf4;
+  cursor: pointer;
+}
+.list2 .four .panel-body .fangjian {
+  display: flex;
+  justify-content: space-around;
+  line-height: 50px;
+}
+.list2 .four .panel-body .fangjian li {
+  cursor: pointer;
+  width: 150px;
+  padding-left: 15px;
+}
+.list2 .four .panel-body .fangjian li:hover {
+  background: #419ce3;
+  color: #fff;
+}
+.list2 .four .panel-body .fangjian li:first-child span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") no-repeat;
+  background-position: 5px -35px;
+}
+.list2 .four .panel-body .fangjian li:first-child:hover span {
+  background-position: -23px -35px;
+}
+.list2 .four .panel-body .fangjian li:nth-child(2) span {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") no-repeat;
+  background-position: -119px -33px;
+}
+.list2 .four .panel-body .fangjian li:nth-child(2):hover span {
+  background-position: -155px -34px;
+}
+.list2 .four .panel-body .fangjian li:nth-child(3) span {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") no-repeat;
+  background-position: -275px -32px;
+}
+.list2 .four .panel-body .fangjian li:nth-child(3):hover span {
+  background-position: -300px -32px;
+}
+.list2 .four .panel-body .fangjian li:nth-child(4) span {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") no-repeat;
+  background-position: -390px -33px;
+}
+.list2 .four .panel-body .fangjian li:nth-child(4):hover span {
+  background-position: -420px -33px;
+}
+.list2 .four .panel-body .hr {
+  border-top: 2px solid #f2993b;
+}
+.list2 .four .panel-body .yvshen {
+  display: flex;
+  justify-content: space-around;
+}
+.list2 .four .panel-body .yvshen li {
+  padding: 0 5px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.list2 .four .panel-body .yvshen li:hover {
+  color: #fff;
+  background: #419ce3;
+}
+.list2 .four .panel-body .yvshen .active {
+  color: #fff;
+  background: #419ce3;
+}
+.list2 .four .panel-body .yvshen-content {
+  position: relative;
+  height: 280px;
+}
+.list2 .four .panel-body .yvshen-content .active {
+  display: block;
+}
+.list2 .four .panel-body .yvshen-content .content a:hover {
+  text-decoration: none;
+  color: #419ce3;
+}
+.list2 .shizhou {
+  margin-top: 15px;
+  padding-left: 0;
+}
+.list2 .shizhou .panel-heading {
+  background: #419ce3;
+}
+.list2 .shizhou .regis3 a,
+.list2 .shizhou .regis4 a,
+.list2 .shizhou .regis5 a,
+.list2 .shizhou .regis6 a {
+  width: 230px;
+  height: 35px;
+  margin-bottom: 14px;
+}
+.list2 .shizhou .regis3 a {
+  margin-top: 20px;
+  background: #ececec;
+  color: #767676;
+}
+.list2 .shizhou .regis4 a {
+  background: #e3e3e3;
+  color: #555555;
+}
+.list2 .shizhou .regis5 a {
+  background: #e3e3e3;
+  color: #333333;
+}
+.list2 .shizhou .regis6 a {
+  background: #e3e3e3;
+  color: #ff9c00;
+}
+.list2 .six {
+  margin-top: 10px;
+}
+.list2 .six .panel-title {
+  line-height: 46px;
+  padding-left: 30px;
+  color: #fff;
+  background: #e98112;
+}
+.list2 .six .panel-title strong {
+  float: right;
+  margin-right: 30px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+  padding: 0 10px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: normal;
+}
+.list2 .six .panel-title span {
+  display: inline-block;
+  position: relative;
+  top: 6px;
+  width: 35px;
+  height: 30px;
+  background: url("../img/chx_tec_spriet.png") -86px 8px no-repeat;
+}
+.list2 .six .panel-body {
+  position: relative;
+}
+.list2 .six .panel-body .weigui {
+  display: flex;
+  justify-content: space-around;
+}
+.list2 .six .panel-body .weigui li {
+  width: 120px;
+  text-align: center;
+  line-height: 30px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.list2 .six .panel-body .weigui li:hover {
+  border-bottom: 2px solid #e88011;
+}
+.list2 .six .panel-body .weigui .active {
+  border-bottom: 2px solid #e88011;
+}
+.list2 .six .panel-body .weigui-info li {
+  line-height: 40px;
+}
+.list2 .six .panel-body .weigui-info li a {
+  text-decoration: none;
+  color: #000;
+}
+.list2 .six .panel-body .weigui-info li a:hover {
+  color: #e88011;
+}
+.list2 .six .panel-body .weigui-info li strong {
+  font-weight: normal;
+  margin-left: 15px;
+}
+.list2 .six .panel-body .weigui-img {
+  position: absolute;
+  width: 220px;
+  height: 180px;
+  background: url(../img/chx_tec_spriet.png) no-repeat;
+  background-position: 20px -230px;
+  top: 80px;
+  right: 20px;
+}
+.footer {
+  position: relative;
+}
+.footer .footer-info {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+}
+.footer .footer-info span {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.footer .footer-img {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  top: 140px;
+}
+.footer .footer-img span {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url(../img/chx_tec_spriet.png) no-repeat;
+  background-position: -200px -240px;
+}
+.footer .footer-msg {
+  position: absolute;
+  top: 220px;
+  text-align: center;
+  width: 100%;
+}
