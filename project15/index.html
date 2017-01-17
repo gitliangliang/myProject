@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body ng-controller="myCtrl">
+    <div class="container" style="padding-top: 50px">
+        <div class="col-sm-4"><input type="text" class="form-control" ng-model="filter_book" placeholder="请输入要查找的书籍"></div>
+        <div class="col-sm-4"><input type="text" class="form-control" ng-model="filter_id" placeholder="请输入你要查找的ID"></div>
+        <div class="col-sm-4"><input type="text" class="form-control" ng-model="filter_price" placeholder="请输入你要查找的单价"></div>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>书籍编号</th>
+                    <th>书籍名称</th>
+                    <th>书籍单价</th>
+                    <th>书籍数量</th>
+                    <th>书籍总价</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="value in books | filter:{name: filter_book} | filter:{id: filter_id }| filter: { price: filter_price}">
+                    <td>{{value.id}}</td>
+                    <td>{{value.name}}</td>
+                    <td>{{value.price}}</td>
+                    <td>{{value.count}}</td>
+                    <td>{{value.count * value.price}}</td>
+                    <td><button ng-click="deleteRow($index)" class="btn btn-danger">删除</button></td>
+                </tr>
+                <tr>
+                	<td>购买数量:</td>
+                    <td ng-bind="sumCount"></td>
+                    <td>购买总价格:</td>
+                    <td ng-bind="price"></td>
+                    <td colspan="2"><button ng-click="clearAll()" class="btn btn-danger">一键清空</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
